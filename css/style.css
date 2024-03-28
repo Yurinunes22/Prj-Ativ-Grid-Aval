@@ -70,5 +70,17 @@ h1{
     ". . it7 ."
     ". . it7 ."
     ". . it7 ."
-    "it5 it5 it7 ";  
+    "it5 it5 it7 .";  
+}
+
+.container-exerc-3 .item5{
+    grid-area: it5;
+    background-color: red;
+    color: black;
+}
+
+.container-exerc-3 .item7{
+    grid-area: it7;
+    background-color: chartreuse;
+    color: black;
 }
