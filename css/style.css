@@ -1,3 +1,8 @@
+h1{
+    display: flex;
+    justify-content: center;
+    
+}
 .container-exerc-1{
     display: grid;
     width: 70vw;
@@ -5,7 +10,7 @@
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 100px;
     background-color: #c1c9c8;
-    gap: 30px 10px;
+    gap: 20px 10px;
 }
 
 .item{
@@ -24,4 +29,46 @@
     
     grid-column: 3/4;
     grid-row: 1/3;
+}
+
+.container-exerc-2{
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 100px;
+    background-color: #c1c9c8;
+    gap: 20px 10px;
+    grid-template-areas: 
+    "it1 it1 it1"
+    ". it3 it3"
+    ". it3 it3"
+    ". it3 it3"
+    ". . it8"
+    ". . it8";  
+}
+
+.container-exerc-2 .item1{
+    grid-area: it1;
+}
+.container-exerc-2 .item3{
+    grid-area: it3;
+}
+.container-exerc-2 .item8{
+    grid-area: it8;
+}
+
+.container-exerc-3{
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 100px;
+    background-color: #c1c9c8;
+    gap: 20px 10px;
+    grid-template-areas: 
+    ". . it7 ."
+    ". . it7 ."
+    ". . it7 ."
+    "it5 it5 it7 ";  
 }
